@@ -1,0 +1,41 @@
+.sidenav-container {
+  height: 100%;
+}
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+.navbar-spacer {
+  flex-grow: 1;
+}
+.mt-1 {
+  margin-top: 1em !important;
+}
+.height-100 {
+  height: 100px;
+}
+.right-float {
+  float:right !important;
+}
+.expand-or-minimize {
+  color: #007aff;
+}
+.text-decoration-underline {
+  text-decoration: underline!important;
+}
+.font-size-4, p {
+  font-size:14px;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mr-20 {
+  margin-right: 20px !important;
+}
