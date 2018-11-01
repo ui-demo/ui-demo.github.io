@@ -1,154 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-	@import url(https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css);
-	@import url(https://fonts.googleapis.com/earlyaccess/notosanstamil.css);
-	@import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
-	body{font-family: monospace; font-size:12px; margin:0; padding:0;}
-	.en{font-family: 'Noto Sans',monospace;}
-	.hi{font-family: 'Noto Sans',monospace;}
-	.ur{font-family: 'Noto Nastaliq Urdu',monospace;}
-	.ti{font-family: 'Noto Sans Tamil',monospace;}
-	.ka{font-family: 'Noto Sans Kannada',monospace;}
-	.common{font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;}
-	.m-0{
-		margin: 0;
-	}
-	.m-5{
-		margin: 5px;
-	}
-	.ml-100{
-		margin-left: 100px;
-	}
-	.rtl .ml-100{
-		margin-right: 100px;
-		margin-left: unset;
-	}
-	.red{
-		height:100px;
-		width:100px;
-		background:red;
-		display: inline-block;
-	}
-	.blue{
-		background: blue;
-	}
-	table{
-		border-collapse: collapse;
-		margin: 10px auto;
-	}
-	thead{
-		background: #ddd;
-		font-weight: bold;
-		text-align: center;
-	}
-	td{
-		border: 1px solid #666;
-		padding:10px;
-	}
-	td:first-child{
-		max-width:200px;
-		background: #00ffc4;
-		font-family: monospace;
-	}
-	
-	td.selected{
-		background: #eee;
-	}
-</style>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	
-<table>
-<thead>
-	<tr>
-		<td>Applied CSS / Language</td>
-		<td>English</td>
-		<td>Hindi</td>
-		<td>Urdu</td>
-		<td>Tamil</td>
-		<td>Kannada</td>
-	</tr>
-</thead>
-<tbody>
-	<tr class="no">
-		<td>font-family: monospace;</td>
-		<td>This is a sentence</td>
-		<td>यह एक वाक्य है।</td>
-		<td>یہ ایک جملہ ہے.</td>
-		<td>இது ஒரு தண்டனை. </td>
-		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr class="en">
-		<td>font-family: 'Noto Sans',monospace;</td>
-		<td class="selected">This is a sentence</td>
-		<td class="selected">यह एक वाक्य है।</td>
-		<td>یہ ایک جملہ ہے.</td>
-		<td>இது ஒரு தண்டனை. </td>
-		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr class="ur">
-		<td>font-family: 'Noto Nastaliq Urdu',monospace;</td>
-		<td>This is a sentence</td>
-		<td>यह एक वाक्य है।</td>
-		<td class="selected">یہ ایک جملہ ہے.</td>
-		<td>இது ஒரு தண்டனை. </td>
-		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr class="ti">
-		<td>font-family: 'Noto Sans Tamil',monospace;</td>
-		<td>This is a sentence</td>
-		<td>यह एक वाक्य है।</td>
-		<td>یہ ایک جملہ ہے.</td>
-		<td class="selected">இது ஒரு தண்டனை. </td>
-		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr class="ka">
-		<td>font-family: 'Noto Sans Kannada',monospace;</td>
-		<td>This is a sentence</td>
-		<td>यह एक वाक्य है।</td>
-		<td>یہ ایک جملہ ہے.</td>
-		<td>இது ஒரு தண்டனை. </td>
-		<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr class="common">
-		<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;</td>
-		<td class="selected">This is a sentence</td>
-		<td class="selected">यह एक वाक्य है।</td>
-		<td class="selected">یہ ایک جملہ ہے.</td>
-		<td class="selected">இது ஒரு தண்டனை. </td>
-		<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
-	</tr>
-	<tr>
-		<td colspan="6">
-			<ul>
-				<li>Each row has been applied a font. Hightlighted cell shows only which language it got applied.</li>
-			</ul>
-		</td>
-	</tr>
-</tbody>
-</table>
-<div class="blue">
-	<div class="red m-5 ml-100"></div>
-</div>
-<hr />
-<div class="rtl blue">
-	<div class="red m-5 ml-100"></div>
-</div>
-
-
-	<h1>Reading Articles</h1>
+<div class="container">
+	<h2>Experiment to show when a font-family is applied based on the language.</h2>
+	<table>
+	<thead>
+		<tr>
+			<td>Applied CSS / Language</td>
+			<td>English</td>
+			<td>Hindi</td>
+			<td>Urdu</td>
+			<td>Tamil</td>
+			<td>Kannada</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="no">
+			<td>font-family: monospace;</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+		<tr class="en">
+			<td>font-family: 'Noto Sans',monospace;</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+		<tr class="ur">
+			<td>font-family: 'Noto Nastaliq Urdu',monospace;</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+		<tr class="ti">
+			<td>font-family: 'Noto Sans Tamil',monospace;</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+		<tr class="ka">
+			<td>font-family: 'Noto Sans Kannada',monospace;</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+		<tr class="common">
+			<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+		</tr>
+	</tbody>
+	</table>
+	<h4>Observations</h4>
 	<ul>
-		<li>https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site</li>
-		<li>!important - Noto Sans supports Devnagri by default & unicode-rage example - https://fonts.googleapis.com/css?family=Noto+Sans</li>
-		<li>@font-face - https://drafts.csswg.org/css-fonts-3/#font-face-rule</li>
-		<li>@font-face - https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</li>
-		<li>unicode-range - https://drafts.csswg.org/css-fonts-3/#unicode-range-desc</li>
-		<li>Urdu only regular font-weight - https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css</li>
-		<li>Unset v/s Initial - https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css</li>
+		<li>Each row has been applied a font mentioned in the first cell. Hightlighted cell shows which language it got applied to.</li>
 	</ul>
-	</body>
+	
+	<h2>Good Reading Articles</h2>
+	<ul>
+		<li><a target="_blank" href="https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site">https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site</a></li>
+		<li>!important - Noto Sans supports Devnagri by default & unicode-rage example - <a target="_blank" href="https://fonts.googleapis.com/css?family=Noto+Sans">https://fonts.googleapis.com/css?family=Noto+Sans
+		</a></li>
+		<li>@font-face - <a target="_blank" href="https://drafts.csswg.org/css-fonts-3/#font-face-rule">https://drafts.csswg.org/css-fonts-3/#font-face-rule</a></li>
+		<li>@font-face - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</a></li>
+		<li>unicode-range - <a target="_blank" href="https://drafts.csswg.org/css-fonts-3/#unicode-range-desc">https://drafts.csswg.org/css-fonts-3/#unicode-range-desc</a></li>
+		<li>Urdu has only regular font-weight - <a target="_blank" href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css">https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css</a></li>
+		<li>Unset v/s Initial - <a target="_blank" href="https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css">https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css</a></li>
+	</ul>
+	
+	<!--<h2>Issues with reusable css classes which are asymetric directional.</h2>
+	<h4>Red box has been applied class <code>m-5 ml-100</code></h4>
+	<div class="blue">
+		<div class="red m-5 ml-100"></div>
+	</div>
+	<h4>Observations</h4>
+	<ul>
+		<li>Each direction has 5px space except left which is override by the class <code>ml-100</code></li>
+	</ul>
+	<h4>Red box has been applied class <code>m-5 ml-100</code> while blue box has been added <code>rtl class</code></h4>
+	<div class="rtl blue">
+		<div class="red m-5 ml-100"></div>
+	</div>
+	<h4>Observations</h4>
+	<ul>
+		<li>Each direction has 5px space except left which is override by the class <code>ml-100</code></li>
+	</ul>-->
+</div>
+</body>
 </html>
 
