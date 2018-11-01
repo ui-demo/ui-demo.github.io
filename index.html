@@ -6,32 +6,142 @@
 	@import url(https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css);
 	@import url(https://fonts.googleapis.com/earlyaccess/notosanstamil.css);
 	@import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
-	p{font-family: monospace;}
+	body{font-family: monospace; font-size:12px; margin:0; padding:0;}
 	.en{font-family: 'Noto Sans',monospace;}
 	.hi{font-family: 'Noto Sans',monospace;}
 	.ur{font-family: 'Noto Nastaliq Urdu',monospace;}
 	.ti{font-family: 'Noto Sans Tamil',monospace;}
 	.ka{font-family: 'Noto Sans Kannada',monospace;}
 	.common{font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;}
+	.m-0{
+		margin: 0;
+	}
+	.m-5{
+		margin: 5px;
+	}
+	.ml-100{
+		margin-left: 100px;
+	}
+	.rtl .ml-100{
+		margin-right: 100px;
+		margin-left: unset;
+	}
+	.red{
+		height:100px;
+		width:100px;
+		background:red;
+		display: inline-block;
+	}
+	.blue{
+		background: blue;
+	}
+	table{
+		border-collapse: collapse;
+		margin: 10px auto;
+	}
+	thead{
+		background: #ddd;
+		font-weight: bold;
+		text-align: center;
+	}
+	td{
+		border: 1px solid #666;
+		padding:10px;
+	}
+	td:first-child{
+		max-width:200px;
+		background: #00ffc4;
+		font-family: monospace;
+	}
+	
+	td.selected{
+		background: #eee;
+	}
 </style>
 </head>
 <body>
-<p>no - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="en">en - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="hi">hi - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="ur">ur - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="ti">ti - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="ka">ka - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
-<hr/>
-<p class="common">common - (English)This is a sentence. #(Hindi)यह एक वाक्य है। #  (Urdu) یہ ایک جملہ ہے.  # (Tamil) இது ஒரு தண்டனை.  # (Kannada) ಇದು ಒಂದು ವಾಕ್ಯ.</p>
+	
+<table>
+<thead>
+	<tr>
+		<td>Applied CSS / Language</td>
+		<td>English</td>
+		<td>Hindi</td>
+		<td>Urdu</td>
+		<td>Tamil</td>
+		<td>Kannada</td>
+	</tr>
+</thead>
+<tbody>
+	<tr class="no">
+		<td>font-family: monospace;</td>
+		<td>This is a sentence</td>
+		<td>यह एक वाक्य है।</td>
+		<td>یہ ایک جملہ ہے.</td>
+		<td>இது ஒரு தண்டனை. </td>
+		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr class="en">
+		<td>font-family: 'Noto Sans',monospace;</td>
+		<td class="selected">This is a sentence</td>
+		<td class="selected">यह एक वाक्य है।</td>
+		<td>یہ ایک جملہ ہے.</td>
+		<td>இது ஒரு தண்டனை. </td>
+		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr class="ur">
+		<td>font-family: 'Noto Nastaliq Urdu',monospace;</td>
+		<td>This is a sentence</td>
+		<td>यह एक वाक्य है।</td>
+		<td class="selected">یہ ایک جملہ ہے.</td>
+		<td>இது ஒரு தண்டனை. </td>
+		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr class="ti">
+		<td>font-family: 'Noto Sans Tamil',monospace;</td>
+		<td>This is a sentence</td>
+		<td>यह एक वाक्य है।</td>
+		<td>یہ ایک جملہ ہے.</td>
+		<td class="selected">இது ஒரு தண்டனை. </td>
+		<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr class="ka">
+		<td>font-family: 'Noto Sans Kannada',monospace;</td>
+		<td>This is a sentence</td>
+		<td>यह एक वाक्य है।</td>
+		<td>یہ ایک جملہ ہے.</td>
+		<td>இது ஒரு தண்டனை. </td>
+		<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr class="common">
+		<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;</td>
+		<td class="selected">This is a sentence</td>
+		<td class="selected">यह एक वाक्य है।</td>
+		<td class="selected">یہ ایک جملہ ہے.</td>
+		<td class="selected">இது ஒரு தண்டனை. </td>
+		<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<ul>
+				<li>Each row has been applied a font. Hightlighted cell shows only which language it got applied.</li>
+			</ul>
+		</td>
+	</tr>
+</tbody>
+</table>
+<div class="blue">
+	<div class="red m-5 ml-100"></div>
+</div>
+<hr />
+<div class="rtl blue">
+	<div class="red m-5 ml-100"></div>
+</div>
+
 
 	<h1>Reading Articles</h1>
 	<ul>
+		<li>https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site</li>
 		<li>!important - Noto Sans supports Devnagri by default & unicode-rage example - https://fonts.googleapis.com/css?family=Noto+Sans</li>
 		<li>@font-face - https://drafts.csswg.org/css-fonts-3/#font-face-rule</li>
 		<li>@font-face - https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</li>
