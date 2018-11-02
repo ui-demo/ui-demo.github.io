@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstamil.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+
+body{
+	font-family: monospace;
+	font-size:12px; 
+	margin:0; 
+	padding:0;
+}
+.container{
+	max-width:1000px;
+	margin: 0 auto;
+}
+.no{
+	font-family: monospace;
+}
+.en{
+	font-family: 'Noto Sans',monospace;
+}
+.hi{
+	font-family: 'Noto Sans',monospace;
+}
+.ur{
+	font-family: 'Noto Nastaliq Urdu',monospace;
+}
+.ti{
+	font-family: 'Noto Sans Tamil',monospace;
+}
+.ka{
+	font-family: 'Noto Sans Kannada',monospace;
+}
+.all{
+	font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;
+}
+.m-0{
+	margin: 0;
+}
+.m-5{
+	margin: 5px;
+}
+.ml-100{
+	margin-left: 100px;
+}
+.rtl .ml-100{
+	margin-right: 100px;
+	margin-left: unset;
+}
+.red{
+	height:100px;
+	width:100px;
+	background:red;
+	display: inline-block;
+}
+.blue{
+	background: blue;
+	display:inline-block;
+}
+table{
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+thead{
+	background: #f0f6ff;
+	font-weight: bold;
+	text-align: center;
+}
+td{
+	border: 1px solid #666;
+	padding:10px;
+}
+td:first-child{
+	max-width:200px;
+	background: #f0f6ff;
+	font-family: monospace;
+}
+td.selected{
+	background: #eee;
+}
+code {
+	font-family: monospace;
+    background: #fff70045;
+    padding: 3px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}

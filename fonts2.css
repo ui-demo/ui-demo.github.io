@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstamil.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstelugu.css);
+.en{
+	font-family: 'Noto Sans';
+}
+.hi{
+	font-family: 'Noto Sans';
+}
+.ur{
+	font-family: 'Noto Nastaliq Urdu';
+}
+.ta{
+	font-family: 'Noto Sans Tamil';
+}
+.ka{
+	font-family: 'Noto Sans Kannada';
+}
+.te{
+	font-family: 'Noto Sans Telugu';
+}
+
+body{
+	font-family: monospace;
+	font-size:12px; 
+	margin:0; 
+	padding:0;
+}
+.container{
+	max-width:1000px;
+	margin: 0 auto;
+}
+table{
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+thead{
+	background: #f0f6ff;
+	font-weight: bold;
+	text-align: center;
+}
+td{
+	border: 1px solid #666;
+	padding:10px;
+}
+td:first-child{
+	max-width:200px;
+	background: #f0f6ff;
+	font-family: monospace;
+}
+td.selected{
+	background: #eee;
+}
