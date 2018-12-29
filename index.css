@@ -2,37 +2,56 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstamil.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansbengali.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansoriya.css);
+@font-face {
+  font-family: 'Sakal Bharti';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/SakalBharati_N_Ship.ttf) format('truetype');
+}
 
 body{
-	font-family: monospace;
 	font-size:12px; 
 	margin:0; 
 	padding:0;
+	font-family: sans-serif;
 }
 .container{
-	max-width:1000px;
+	max-width: 95%;
 	margin: 0 auto;
 }
 .no{
-	font-family: monospace;
 }
 .en{
-	font-family: 'Noto Sans',monospace;
+	font-family: 'Noto Sans';
 }
 .hi{
-	font-family: 'Noto Sans',monospace;
+	font-family: 'Noto Sans';
 }
 .ur{
-	font-family: 'Noto Nastaliq Urdu',monospace;
+	font-family: 'Noto Nastaliq Urdu';
 }
 .ti{
-	font-family: 'Noto Sans Tamil',monospace;
+	font-family: 'Noto Sans Tamil';
 }
 .ka{
-	font-family: 'Noto Sans Kannada',monospace;
+	font-family: 'Noto Sans Kannada';
+}
+.be{
+	font-family: 'Noto Sans Bengali';
+}
+.pu{
+	font-family: 'Noto Sans Punjabi';
+}
+.or{
+	font-family: 'Noto Sans Oriya';
 }
 .all{
-	font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;
+	font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans Bengali','Noto Sans Oriya','Noto Sans';
+}
+.sakal{
+	font-family: 'Sakal Bharti';
 }
 .m-0{
 	margin: 0;
@@ -48,10 +67,7 @@ body{
 	margin-left: unset;
 }
 .red{
-	height:100px;
-	width:100px;
 	background:red;
-	display: inline-block;
 }
 .blue{
 	background: blue;
@@ -76,7 +92,7 @@ td:first-child{
 	font-family: monospace;
 }
 td.selected{
-	background: #eee;
+	background: yellow;
 }
 code {
 	font-family: monospace;

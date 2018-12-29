@@ -4,7 +4,13 @@
   font-family: 'ASOTBidisha';
   font-style: normal;
   font-weight: 400;
-  src: url(ASOTBidisha_N_Ship.TTF) format('truetype');
+  src: url(fonts/ASOTBidisha_N_Ship.TTF) format('truetype');
+}
+@font-face {
+  font-family: 'Sakal Bharti';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/SakalBharati_N_Ship.ttf) format('truetype');
 }
 body{
 	font-size:12px; 

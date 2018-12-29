@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="container">
-	<h2>Experiment to show when a font-family is automatically applied based on the language [unicode].</h2>
+	<h2>POC - Experiment to show when a fonts is automatically applied based on the <strong>language characters it supports[unicode]</strong>.</h2>
 	<table>
 	<thead>
 		<tr>
@@ -16,56 +16,110 @@
 			<td>Urdu</td>
 			<td>Tamil</td>
 			<td>Kannada</td>
+			<td>Assamese</td>
+			<td>Punjabi</td>
+			<td>Oriya</td>
 		</tr>
 	</thead>
 	<tbody>
 		<tr class="no">
-			<td>font-family: monospace;</td>
+			<td>font-family: inherit;</td>
 			<td>This is a sentence</td>
 			<td>यह एक वाक्य है।</td>
 			<td>یہ ایک جملہ ہے.</td>
 			<td>இது ஒரு தண்டனை. </td>
 			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 		<tr class="en">
-			<td>font-family: 'Noto Sans',monospace;</td>
+			<td>font-family: 'Noto Sans';</td>
 			<td class="selected">This is a sentence</td>
 			<td class="selected">यह एक वाक्य है।</td>
 			<td>یہ ایک جملہ ہے.</td>
 			<td>இது ஒரு தண்டனை. </td>
 			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 		<tr class="ur">
-			<td>font-family: 'Noto Nastaliq Urdu',monospace;</td>
+			<td>font-family: 'Noto Nastaliq Urdu';</td>
 			<td>This is a sentence</td>
 			<td>यह एक वाक्य है।</td>
 			<td class="selected">یہ ایک جملہ ہے.</td>
 			<td>இது ஒரு தண்டனை. </td>
 			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 		<tr class="ti">
-			<td>font-family: 'Noto Sans Tamil',monospace;</td>
+			<td>font-family: 'Noto Sans Tamil';</td>
 			<td>This is a sentence</td>
 			<td>यह एक वाक्य है।</td>
 			<td>یہ ایک جملہ ہے.</td>
 			<td class="selected">இது ஒரு தண்டனை. </td>
 			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 		<tr class="ka">
-			<td>font-family: 'Noto Sans Kannada',monospace;</td>
+			<td>font-family: 'Noto Sans Kannada';</td>
 			<td>This is a sentence</td>
 			<td>यह एक वाक्य है।</td>
 			<td>یہ ایک جملہ ہے.</td>
 			<td>இது ஒரு தண்டனை. </td>
 			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="be">
+			<td>font-family: 'Noto Sans Bengali';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="or">
+			<td>font-family: 'Noto Sans Oriya';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 		<tr class="all">
-			<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans', monospace;</td>
+			<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans','Noto Sans Bengali','Noto Sans Oriya';</td>
 			<td class="selected">This is a sentence</td>
 			<td class="selected">यह एक वाक्य है।</td>
 			<td class="selected">یہ ایک جملہ ہے.</td>
 			<td class="selected">இது ஒரு தண்டனை. </td>
 			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="sakal">
+			<td class="red">font-family: 'Sakal Bharti';</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td class="selected">ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
 		</tr>
 	</tbody>
 	</table>
