@@ -6,11 +6,18 @@
 </head>
 <body>
 <div class="container">
-	<h2>POC - Experiment to show when a fonts is automatically applied based on the <strong>language characters it supports[unicode]</strong>.</h2>
+	<h2>POC - Experiment to show a fonts is automatically applied based on the Unicode range [ language ] it supports.</h2>
+	<h4>Pls Observe :</h4>
+	<ul>
+		<li>Each row has been applied a font mentioned in the first cell. Hightlighted yellow cell shows which language it got applied to.</li>
+		<li>Punjabi is not available in Noto Sans Family</li>
+		<li>In case of undeclared or unsupported font for any language, the rendering of that language relies on the OS support. Languages like - Kannada, Telugu are not properly shown on Ubuntu OS without any fonts applied. <strong>Tofu [Squares]</strong> are shown.</li>
+		<li>Below this table, pls see the screenshots taken on various OS to see the differece.</li>
+	</ul>
 	<table>
 	<thead>
 		<tr>
-			<td>Applied CSS / Language</td>
+			<td>Applied Font / Language</td>
 			<td>English</td>
 			<td>Hindi</td>
 			<td>Urdu</td>
@@ -123,28 +130,23 @@
 		</tr>
 	</tbody>
 	</table>
-	<h4>Observations</h4>
-	<ul>
-		<li>Each row has been applied a font mentioned in the first cell. Hightlighted cell shows which language it got applied to.</li>
-		<li>Languages like - Kannada, Telugu are not properly shown on Ubuntu OS without any fonts applied. <strong>Tofu</strong> are shown.</li>
-		<li> See how above table looks in different OS.</li>
-	</ul>
+	
 	<div>
 		<div>
-			<h4>Ubuntu</h4>
+			<h4>Ubuntu Screenshot</h4>
 			<img src="images/ubuntu-all.png">
 		</div>
 		<div>
-			<h4>Windows</h4>
+			<h4>Windows 10 Screenshot</h4>
 			<img src="images/windows-all.png">
 		</div>
 		<div>
-			<h4>Android</h4>
+			<h4>Android 9 Chrome browser Screenshot</h4>
 			<img src="images/android-all.png">
 		</div>
 	</div>
 	
-	<h2>Good Reading Articles</h2>
+	<!--<h2>Good Reading Articles</h2>
 	<ul>
 		<li><a target="_blank" href="https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site">https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site</a></li>
 		<li>!important - Noto Sans supports Devnagri by default & unicode-rage example - <a target="_blank" href="https://fonts.googleapis.com/css?family=Noto+Sans">https://fonts.googleapis.com/css?family=Noto+Sans
@@ -154,7 +156,7 @@
 		<li>unicode-range - <a target="_blank" href="https://drafts.csswg.org/css-fonts-3/#unicode-range-desc">https://drafts.csswg.org/css-fonts-3/#unicode-range-desc</a></li>
 		<li>Urdu has only regular font-weight - <a target="_blank" href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css">https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css</a></li>
 		<li>Unset v/s Initial - <a target="_blank" href="https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css">https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css</a></li>
-	</ul>
+	</ul>-->
 	
 	<!--<h2>Issues with reusable css classes which are asymetric directional.</h2>
 	<h4>Red box has been applied class <code>m-5 ml-100</code></h4>
