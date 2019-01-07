@@ -1,10 +1,15 @@
 ---
 layout: lang
 ---
-<div ng-app="myApp" ng-controller="myCtrl">
-<textarea ng-model="text" placeholder="Enter text here..."></textarea>
-    <h1>You entered:</h1>
-    <div class="preview">{{ "{{ text " }}}}</div>
+<div ng-app="myApp" ng-controller="myCtrl" class="editor">
+    <div>
+        <h4>Editor: </h4>
+        <textarea ng-model="text" placeholder="Enter text here..."></textarea>
+    </div>
+    <div>
+        <h4>Preview: </h4>
+        <div class="preview">{{ "{{ text " }}}}</div>
+    </div>
 </div>
 <script>
 var app = angular.module('myApp', []);
