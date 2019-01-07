@@ -69,6 +69,7 @@ textarea{
 	margin: 0;
 	font-family: inherit;
 	padding: 10px;
+	max-width: 100%;
 }
 .preview{
 	border: 1px solid #ccc;
