@@ -10,34 +10,29 @@ body{
 	font-size:14px; 
 	margin:0; 
 	padding:0;
-	font-family: 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Punjabi','Noto Sans Oriya','Noto Sans';
+	font-family: 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Oriya','Noto Sans';
 }
 .header{
 	background: ghostwhite;
+	border-bottom: 1px solid #333;
+	padding:10px;
+}
+.header-inner{
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1{
+	margin:0;
 }
 .content{
 	max-width: 90%;
 	margin: 0 auto;
 }
-.list{
-	max-width: 90%;
-	margin: 0 auto;
-	list-style: none;
-	padding:10px;
-	display: flex;
-	overflow-x: auto;
-}
-hr{
-	margin:0;
-}
-.list li{
-	margin: 0 30px 0 0;
-}
 .list-2{
 	padding:0;
-}
-hr{
-	clear: both;
 }
 table{
 	border-collapse: collapse;
@@ -70,6 +65,7 @@ textarea{
 	font-family: inherit;
 	padding: 10px;
 	max-width: 100%;
+	font-size:16px;
 }
 .preview{
 	border: 1px solid #ccc;
@@ -77,16 +73,25 @@ textarea{
 	border-radius: 2px;
 	background: #f9f9f9;
 	min-height: 100px;
+	font-size:16px;
 }
 .editor{
-	display:flex;
 	margin: 30px 0 0 0 ;
 }
 .editor>div{
 	padding: 10px;
 }
 @media screen and (min-width:768px){
+	.editor{
+		display:flex;
+	}
 	.editor>div{
 		width:50%;
+		position: relative;
 	}
 }
+select#mySelect{
+	position: absolute;
+	top: 35px;
+	right: 10px;
+} 

@@ -1,5 +1,6 @@
 ---
 layout: lang
+title: Freehand
 ---
 <div ng-app="myApp" ng-controller="myCtrl" class="editor">
     <div>
@@ -8,6 +9,16 @@ layout: lang
     </div>
     <div>
         <h4>Preview: </h4>
+        <select onchange="updateFonts()" id="mySelect">
+            <option value="inherit" selected>All fonts</option>
+            <option value="Noto Sans">Noto Sans</option>
+            <option value="Noto Sans Bengali">Noto Sans Bengali</option>
+            <option value="Noto Sans Kannada">Noto Sans Kannada</option>
+            <option value="Noto Sans Oriya">Noto Sans Oriya</option>
+            <option value="Noto Sans Tamil">Noto Sans Tamil</option>
+            <option value="Noto Sans Telugu">Noto Sans Telugu</option>
+            <option value="Noto Nastaliq Urdu">Noto Nastaliq Urdu</option>
+        </select>
         <div class="preview">{{ "{{ text " }}}}</div>
     </div>
 </div>
@@ -16,4 +27,9 @@ var app = angular.module('myApp', []);
     app.controller('myCtrl', function($scope) {
     $scope.text = "";
 });
+function updateFonts(){
+    var x = document.getElementById("mySelect").selectedIndex;
+    var y = document.getElementById("mySelect").options;
+    document.querySelector(".preview").style.fontFamily=y[x].value;
+}
 </script>

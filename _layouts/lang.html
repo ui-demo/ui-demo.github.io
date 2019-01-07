@@ -8,23 +8,45 @@ layout: lang
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=10, user-scalable=yes" />
   <link href="common.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <title>{{page.title}}</title>
 </head>
 <body>
   <div class="header">
-    <ul class="list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="assamese.html">Assamese</a></li>
-      <li><a href="bengali.html">Bengali</a></li>
-      <li><a href="english.html">English</a></li>
-      <li><a href="hindi.html">Hindi</a></li>
-      <li><a href="kannada.html">Kannada</a></li>
-      <li><a href="oriya.html">Oriya</a></li>
-      <li><a href="tamil.html">Tamil</a></li>
-      <li><a href="telugu.html">Telugu</a></li>
-      <li><a href="urdu.html">Urdu</a></li>
-      <li><a href="freehand.html">Freehand</a></li>
-    </ul>
-    <hr>
+    <div class="header-inner">
+      <h1>{{page.title}}</h1>
+      <div class="langswitcher">
+          Select :  
+          <select class="" id="LanguageSwitcher">
+            <option value="assamese.html">Assamese</option>
+            <option value="bengali.html">Bengali</option>
+            <option value="english.html">English</option>
+            <option value="hindi.html">Hindi</option>
+            <option value="kannada.html">Kannada</option>
+            <option value="oriya.html">Oriya</option>
+            <option value="tamil.html">Tamil</option>
+            <option value="telugu.html">Telugu</option>
+            <option value="urdu.html">Urdu</option>
+            <option value="freehand.html">Freehand</option>
+          </select>
+      </div>
+      
+      <script>
+      currentUrl = window.location.pathname;
+      currentFile = currentUrl.replace("/common/","");
+      document.getElementById("LanguageSwitcher").value = currentFile;
+      $('#LanguageSwitcher').on('change', function () {
+        var yLanguageSwitcher = document.getElementById("LanguageSwitcher").options;
+        var xLanguageSwitcher = document.getElementById("LanguageSwitcher").selectedIndex;
+        var switchPath = yLanguageSwitcher[xLanguageSwitcher].value;
+        updatedUrl = currentUrl.replace(currentFile,switchPath);
+        window.location = updatedUrl; 
+      });
+      </script>
+    </div>
   </div>
   <div class="content">
     {{ content }}
