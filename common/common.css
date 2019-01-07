@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstelugu.css);
 
 body{
-	font-size:12px; 
+	font-size:14px; 
 	margin:0; 
 	padding:0;
 	font-family: 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Punjabi','Noto Sans Oriya','Noto Sans';
@@ -16,26 +16,15 @@ body{
 	max-width: 95%;
 	margin: 0 auto;
 }
-
-.m-0{
-	margin: 0;
+.list{
+	list-style: none;
 }
-.m-5{
-	margin: 5px;
+.list li{
+	float: left;
+	margin: 0 20px 0 0;
 }
-.ml-100{
-	margin-left: 100px;
-}
-.rtl .ml-100{
-	margin-right: 100px;
-	margin-left: unset;
-}
-.red{
-	background:red;
-}
-.blue{
-	background: blue;
-	display:inline-block;
+hr{
+	clear: both;
 }
 table{
 	border-collapse: collapse;
@@ -49,24 +38,4 @@ thead{
 td{
 	border: 1px solid #666;
 	padding:10px;
-}
-td:first-child{
-	max-width:200px;
-	background: #f0f6ff;
-}
-td.selected{
-	background: yellow;
-}
-code {
-	font-family: monospace;
-    background: #fff70045;
-    padding: 3px 10px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-img{
-	cursor: pointer;
-	border: 3px solid red;
-	padding: 3px;
-	border-radius: 2px;
 }
