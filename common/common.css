@@ -12,16 +12,29 @@ body{
 	padding:0;
 	font-family: 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Punjabi','Noto Sans Oriya','Noto Sans';
 }
-.container{
-	max-width: 95%;
+.header{
+	background: ghostwhite;
+}
+.content{
+	max-width: 90%;
 	margin: 0 auto;
 }
 .list{
+	max-width: 90%;
+	margin: 0 auto;
 	list-style: none;
+	padding:10px;
+	display: flex;
+	overflow-x: auto;
+}
+hr{
+	margin:0;
 }
 .list li{
-	float: left;
-	margin: 0 20px 0 0;
+	margin: 0 30px 0 0;
+}
+.list-2{
+	padding:0;
 }
 hr{
 	clear: both;
@@ -38,4 +51,15 @@ thead{
 td{
 	border: 1px solid #666;
 	padding:10px;
+}
+
+.content,
+.content a,
+.content a:hover,
+.content a:focus{
+	text-decoration: none;
+	color: #333;
+	font-size: 14px !important;
+	cursor: text;
+	pointer-events: inherit;
 }
