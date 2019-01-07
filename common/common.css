@@ -89,9 +89,10 @@ textarea{
 		width:50%;
 		position: relative;
 	}
+	select#mySelect{
+		position: absolute;
+		top: 35px;
+		right: 10px;
+	} 
 }
-select#mySelect{
-	position: absolute;
-	top: 35px;
-	right: 10px;
-} 
+
