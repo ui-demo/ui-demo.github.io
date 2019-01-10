@@ -5,12 +5,16 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansbengali.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosansoriya.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstelugu.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansgujarati.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansdevanagari.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansgurmukhi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansmalayalam.css);
 
 body{
 	font-size:14px; 
 	margin:0; 
 	padding:0;
-	font-family: 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Oriya','Noto Sans';
+	font-family:'Noto Sans Malayalam','Noto Sans Gurmukhi','Noto Sans Devanagari','Noto Sans Gujarati', 'Noto Sans Telugu','Noto Nastaliq Urdu','Noto Sans Tamil','Noto Sans Kannada','Noto Sans Bengali','Noto Sans Oriya','Noto Sans';
 }
 .header{
 	background: ghostwhite;
