@@ -1,0 +1,185 @@
+---
+title: Experiment to show a fonts is automatically applied based on the Unicode range [ language ] it supports.
+---
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+	<link href="/assets/css/demo1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+		{% include sidebar.html %}
+<div class="container">
+	<h2>POC - Experiment to show a fonts is automatically applied based on the Unicode range [ language ] it supports.</h2>
+	<h4>Pls Observe :</h4>
+	<ul>
+		<li>Each row has been applied a font mentioned in the first cell. Hightlighted yellow cell shows which language it got applied to.</li>
+		<li>Punjabi is not available in Noto Sans Family</li>
+		<li>In case of undeclared or unsupported font for any language, the rendering of that language relies on the OS support. Languages like - Kannada, Telugu are not properly shown on Ubuntu OS without any fonts applied. <strong>Tofu [Squares]</strong> are shown.</li>
+		<li>Below this table, pls see the screenshots taken on various OS to see the differece.</li>
+	</ul>
+	<table>
+	<thead>
+		<tr>
+			<td>Applied Font / Language</td>
+			<td>English</td>
+			<td>Hindi</td>
+			<td>Urdu</td>
+			<td>Tamil</td>
+			<td>Kannada</td>
+			<td>Assamese</td>
+			<td>Punjabi</td>
+			<td>Oriya</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="no">
+			<td>font-family: inherit;</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="en">
+			<td>font-family: 'Noto Sans';</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="ur">
+			<td>font-family: 'Noto Nastaliq Urdu';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="ti">
+			<td>font-family: 'Noto Sans Tamil';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="ka">
+			<td>font-family: 'Noto Sans Kannada';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="be">
+			<td>font-family: 'Noto Sans Bengali';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td>ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="or">
+			<td>font-family: 'Noto Sans Oriya';</td>
+			<td>This is a sentence</td>
+			<td>यह एक वाक्य है।</td>
+			<td>یہ ایک جملہ ہے.</td>
+			<td>இது ஒரு தண்டனை. </td>
+			<td>ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td>প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="all">
+			<td>font-family: 'Noto Sans Kannada','Noto Sans Tamil','Noto Nastaliq Urdu','Noto Sans','Noto Sans Bengali','Noto Sans Oriya';</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td>ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+		<tr class="sakal">
+			<td class="red">font-family: 'Sakal Bharti';</td>
+			<td class="selected">This is a sentence</td>
+			<td class="selected">यह एक वाक्य है।</td>
+			<td class="selected">یہ ایک جملہ ہے.</td>
+			<td class="selected">இது ஒரு தண்டனை. </td>
+			<td class="selected">ಇದು ಒಂದು ವಾಕ್ಯ</td>
+			<td class="selected">প্ৰচাৰ মাধ্য়ম</td>
+			<td class="selected">ਇਹ ਇਕ ਵਾਕ ਹੈ</td>
+			<td class="selected">ଥିସ ଇସଃ ଏ ସେଂଟନ୍ସ </td>
+		</tr>
+	</tbody>
+	</table>
+	
+	<div>
+		<div>
+			<h4>Ubuntu Screenshot</h4>
+			<img src="/assets/images/ubuntu-all.png">
+		</div>
+		<div>
+			<h4>Windows 10 Screenshot</h4>
+			<img src="/assets/images/windows-all.png">
+		</div>
+		<div>
+			<h4>Android 9 Chrome browser Screenshot</h4>
+			<img src="/assets/images/android-all.png">
+		</div>
+	</div>
+	
+	<!--<h2>Good Reading Articles</h2>
+	<ul>
+		<li><a target="_blank" href="https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site">https://ux.stackexchange.com/questions/25295/best-practice-for-designing-ui-for-a-multilingual-site</a></li>
+		<li>!important - Noto Sans supports Devnagri by default & unicode-rage example - <a target="_blank" href="https://fonts.googleapis.com/css?family=Noto+Sans">https://fonts.googleapis.com/css?family=Noto+Sans
+		</a></li>
+		<li>@font-face - <a target="_blank" href="https://drafts.csswg.org/css-fonts-3/#font-face-rule">https://drafts.csswg.org/css-fonts-3/#font-face-rule</a></li>
+		<li>@font-face - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</a></li>
+		<li>unicode-range - <a target="_blank" href="https://drafts.csswg.org/css-fonts-3/#unicode-range-desc">https://drafts.csswg.org/css-fonts-3/#unicode-range-desc</a></li>
+		<li>Urdu has only regular font-weight - <a target="_blank" href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css">https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css</a></li>
+		<li>Unset v/s Initial - <a target="_blank" href="https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css">https://stackoverflow.com/questions/33834049/what-is-the-difference-between-the-initial-and-unset-values-in-css</a></li>
+	</ul>-->
+	
+	<!--<h2>Issues with reusable css classes which are asymetric directional.</h2>
+	<h4>Red box has been applied class <code>m-5 ml-100</code></h4>
+	<div class="blue">
+		<div class="red m-5 ml-100"></div>
+	</div>
+	<h4>Observations</h4>
+	<ul>
+		<li>Each direction has 5px space except left which is override by the class <code>ml-100</code></li>
+	</ul>
+	<h4>Red box has been applied class <code>m-5 ml-100</code> while blue box has been added <code>rtl class</code></h4>
+	<div class="rtl blue">
+		<div class="red m-5 ml-100"></div>
+	</div>
+	<h4>Observations</h4>
+	<ul>
+		<li>Each direction has 5px space except left which is override by the class <code>ml-100</code></li>
+	</ul>-->
+</div>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+.row{
+	display: flex;
+	margin: 30px 0;
+}
+.row div{
+	padding: 20px;
+	font-size: 20px;
+	font-weight:bold;
+	background: yellow;
+	margin: 20px;
+	border: 1px solid #333;
+}

@@ -1,0 +1,28 @@
+---
+title: Flexbox directionality
+---
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+	<link href="/assets/css/demo5.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+		{% include sidebar.html %}
+	<h2>Experiment to show flexbox changes its directionality based on the attribute added</h2>
+	<hr />
+	<h3>when dir="ltr" is added to parent div the flex box starts from left to right in direction.</h3>
+	<div class="row" dir="ltr">
+		<div class="item1">1</div>
+		<div class="item2">2</div>
+		<div class="item3">3</div>
+	</div>
+	<hr />
+	<h3>when dir="rtl" is added to parent div the flex box starts from right to left in direction.</h3>
+	<div class="row" dir="rtl">
+		<div class="item1">1</div>
+		<div class="item2">2</div>
+		<div class="item3">3</div>
+	</div>
+</body>
+</html> 

@@ -1,11 +1,34 @@
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-
+# Site settings
+title: Sunbird Docs
+name: Sunbird Docs
+email: info@sunbird.org
+description: "Sunbird Docs Site"
+environment: production
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
+safe: false
+ga: UA-106552125-1
+anchorPrefix: link
+tocTopTag: h2
+showToggleButton: true
+showSearch: true
+  
+defaults:
+  -
+    scope:
+      path: "contributions"
+    values:
+      layout: "page"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-  - app/
+- .gitignore
+- README.md
+- ingredients
+- Gemfile
+- Gemfile.lock
+- circle.yml
+- .sh
+
+sass:
+    sass_dir: css
+ 
